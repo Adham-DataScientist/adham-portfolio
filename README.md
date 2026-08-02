@@ -70,6 +70,50 @@ Machine Learning project for predicting future sales using Python.
 - Google Fonts
 
 ---
+# 🏆 Certifications
+
+## 📊 Data Analysis Camp
+
+Successfully completed an intensive Data Analysis Bootcamp covering:
+
+- Power BI
+- SQL
+- Python
+- Excel
+- Data Visualization
+- Data Cleaning
+- Business Intelligence
+
+![Data Analysis Camp](files/data-analysis-certificate.jpg)
+
+---
+
+## 💻 Digital Transformation Program
+
+Completed the Digital Transformation Program including:
+
+- Windows
+- Microsoft Office
+- Excel
+- Access
+- PowerPoint
+- Outlook
+- Photoshop
+- Networking
+
+![Digital Transformation](files/digital-transformation.jpg)
+
+---
+
+## 🎓 Bachelor Degree
+
+Bachelor of Management Information Systems (MIS)
+
+El Obour Higher Institute for Management & Information Systems
+
+Graduated in 2024.
+
+![Bachelor Degree](files/graduation-certificate.jpg)
 
 # 📸 Screenshots
 
