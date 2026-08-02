@@ -1,20 +1,28 @@
-# 👋 Adham Awad | Data Analyst Portfolio
+# 👋 Adham Awad
 
-Welcome to my personal portfolio website.
+<h3 align="center">Data Analyst | Power BI Developer | SQL | Python</h3>
 
-This portfolio showcases my skills, projects, certificates, and experience in Data Analytics and Business Intelligence.
-
-## 🌐 Live Demo
-
-🔗 https://adham-datascientist.github.io/adham-portfolio/
+<p align="center">
+  <a href="https://adham-datascientist.github.io/adham-portfolio/">🌐 Portfolio</a> •
+  <a href="https://www.linkedin.com/in/adham-mahmoud-a680032a9/">LinkedIn</a> •
+  <a href="mailto:adhammahmoud33333@gmail.com">Email</a>
+</p>
 
 ---
 
-# 📌 About
+# 🌐 Portfolio Website
 
-I am a Data Analyst passionate about transforming raw data into meaningful insights using modern analytics tools.
+🔗 **Live Demo**
 
-### My main skills
+https://adham-datascientist.github.io/adham-portfolio/
+
+---
+
+# 👨‍💻 About Me
+
+I am a Data Analyst passionate about transforming raw data into valuable business insights using Business Intelligence and Data Analytics tools.
+
+### Technical Skills
 
 - 📊 Power BI
 - 🗄 SQL
@@ -27,41 +35,40 @@ I am a Data Analyst passionate about transforming raw data into meaningful insig
 
 ---
 
-# 🚀 Features
+# 🚀 Portfolio Features
 
 - Responsive Design
-- Modern UI/UX
 - Dark Mode
-- Smooth Animations
-- Professional Projects Section
-- Skills Progress Bars
+- Modern UI
+- Animated Sections
+- Projects Showcase
+- Certificates Gallery
 - Download CV
 - Contact Section
-- Mobile Friendly
 
 ---
 
 # 📂 Projects
 
-### 🏥 Healthcare Analytics Dashboard
+## 🏥 Healthcare Analytics Dashboard
 
-Interactive dashboard built with Power BI for healthcare insights.
-
----
-
-### 🍽 Restaurant Analytics Dashboard
-
-Business Intelligence dashboard for restaurant performance analysis.
+Interactive Power BI dashboard for healthcare analytics.
 
 ---
 
-### 📈 Sales Forecasting System
+## 🍽 Restaurant Analytics Dashboard
 
-Machine Learning project for predicting future sales using Python.
+Business Intelligence dashboard for restaurant performance.
 
 ---
 
-# 🛠 Technologies Used
+## 📈 Sales Forecasting System
+
+Python & Machine Learning project for sales prediction.
+
+---
+
+# 🛠 Technologies
 
 - HTML5
 - CSS3
@@ -70,89 +77,69 @@ Machine Learning project for predicting future sales using Python.
 - Google Fonts
 
 ---
+
 # 🏆 Certifications
 
 ## 📊 Data Analysis Camp
 
-Successfully completed an intensive Data Analysis Bootcamp covering:
+Successfully completed an intensive Data Analysis Bootcamp.
 
-- Power BI
-- SQL
-- Python
-- Excel
-- Data Visualization
-- Data Cleaning
-- Business Intelligence
-
-![Data Analysis Camp](files/data-analysis-certificate.jpg)
+<img src="https://adham-datascientist.github.io/adham-portfolio/files/data-analysis-certificate.jpg" width="700">
 
 ---
 
 ## 💻 Digital Transformation Program
 
-Completed the Digital Transformation Program including:
+Completed the Digital Transformation Program.
 
-- Windows
-- Microsoft Office
-- Excel
-- Access
-- PowerPoint
-- Outlook
-- Photoshop
-- Networking
-
-![Digital Transformation](files/digital-transformation.jpg)
+<img src="https://adham-datascientist.github.io/adham-portfolio/files/digital-transformation.jpg" width="700">
 
 ---
 
-## 🎓 Bachelor Degree
-
-Bachelor of Management Information Systems (MIS)
+## 🎓 Bachelor of Management Information Systems
 
 El Obour Higher Institute for Management & Information Systems
 
-Graduated in 2024.
+<img src="https://adham-datascientist.github.io/adham-portfolio/files/graduation-certificate.jpg" width="700">
 
-![Bachelor Degree](files/graduation-certificate.jpg)
+---
 
-# 📸 Screenshots
+# 📸 Portfolio Preview
 
 ## Home
 
-> Add a screenshot here
+<img src="https://adham-datascientist.github.io/adham-portfolio/files/home.png">
+
+---
 
 ## Projects
 
-> Add another screenshot here
+<img src="https://adham-datascientist.github.io/adham-portfolio/files/projects.png">
 
 ---
 
 # 📄 Resume
 
-Download my CV directly from the portfolio.
+Download CV from the portfolio website.
 
 ---
 
 # 📬 Contact
 
-📧 Email
+📧 **Email**
 
 adhammahmoud33333@gmail.com
 
-💼 LinkedIn
+💼 **LinkedIn**
 
 https://www.linkedin.com/in/adham-mahmoud-a680032a9/
 
-🐙 GitHub
+🐙 **GitHub**
 
 https://github.com/Adham-DataScientist
 
 ---
 
-# ⭐ Repository
-
-If you like this project, don't forget to give it a ⭐ on GitHub.
-
----
+⭐ If you like this project, don't forget to star the repository.
 
 © 2026 Adham Awad
