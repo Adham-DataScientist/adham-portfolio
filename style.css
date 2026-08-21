@@ -277,10 +277,10 @@ nav ul li a:hover{
     background:#ffffff;
 }
 
-.contact-content{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .contact-card{
