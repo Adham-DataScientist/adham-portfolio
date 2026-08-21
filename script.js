@@ -126,3 +126,55 @@ if(topBtn){
 
     });
 }
+const translations = {
+    en: {
+        nav_about: "About",
+        nav_skills: "Skills",
+        nav_projects: "Projects",
+        nav_contact: "Contact",
+        projects_title: "Featured AI & Data Science Projects",
+        demo_btn: "🚀 Live Demo",
+        code_btn: "💻 GitHub"
+    },
+    ar: {
+        nav_about: "نبذة عني",
+        nav_skills: "المهارات",
+        nav_projects: "المشاريع",
+        nav_contact: "تواصل معي",
+        projects_title: "أبرز مشاريع الذكاء الاصطناعي وعلوم البيانات",
+        demo_btn: "🚀 التجربة الحية",
+        code_btn: "💻 الكود المصدري"
+    }
+};
+
+let currentLang = localStorage.getItem('lang') || 'en';
+
+function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+
+    const langBtn = document.getElementById('lang-btn');
+    if (langBtn) {
+        langBtn.textContent = lang === 'en' ? 'AR' : 'EN';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    setLanguage(currentLang);
+    
+    const langBtn = document.getElementById('lang-btn');
+    if (langBtn) {
+        langBtn.addEventListener('click', () => {
+            setLanguage(currentLang === 'en' ? 'ar' : 'en');
+        });
+    }
+});
