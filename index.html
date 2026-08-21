@@ -20,48 +20,34 @@
         content="Explore interactive machine learning apps, predictive analytics models, and data pipelines built by Adham Mahmoud.">
     <meta property="og:type" content="website">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style_2.css">
 </head>
 
 <body>
 
     <header>
 
-        <nav>
-
-            <h2 class="logo">Adham Awad</h2>
-
+        <nav class="container">
+            <div class="logo">Adham Awad</div>
             <ul>
-
-                <li><a href="#home">Home</a></li>
-
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#skills">Skills</a></li>
-
-                <li><a href="#projects">Projects</a></li>
-
-                <li><a href="#certificates">Certificates</a></li>
-
-                <li><a href="#contact">Contact</a></li>
-
+                <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#certificates" data-i18n="nav_certificates">Certificates</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
-            <button id="theme-toggle" class="theme-btn">
-                <i class="fa-solid fa-moon"></i>
-            </button>
-            <div class="nav-actions">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
                 <button id="lang-btn" class="theme-btn">AR</button>
+                <a href="files/Adham_Awad_CV.pdf" download class="btn" data-i18n="nav_cv">Download CV</a>
             </div>
-
-            <a href="files/Adham Mahmoud Awad.pdf" class="btn" target="_blank">
-                Download CV
-            </a>
-
         </nav>
 
     </header>
 
-    <section class="hero" id="home">
+    <section class="hero" id="hero">
 
         <div class="container">
 
@@ -69,31 +55,25 @@
 
                 <div class="hero-text">
 
-                    <h3>Hello, I'm</h3>
+                    <h3 data-i18n="hero_hello">Hello, I'm</h3>
 
                     <h1>Adham Awad</h1>
 
-                    <h2>Data Analyst</h2>
+                    <h2 data-i18n="hero_title">Data Analyst</h2>
 
-                    <p>
-
+                    <p data-i18n="hero_desc">
                         Passionate about transforming raw data into meaningful
                         business insights using Power BI, SQL, Excel and Python.
-
                     </p>
 
                     <div class="hero-buttons">
 
-                        <a href="#projects" class="btn">
-
+                        <a href="#projects" class="btn" data-i18n="view_projects">
                             View Projects
-
                         </a>
 
-                        <a href="#contact" class="btn-outline">
-
+                        <a href="#contact" class="btn-outline" data-i18n="contact_me">
                             Contact Me
-
                         </a>
 
                     </div>
@@ -120,16 +100,15 @@
 
         </div>
 
-        </div>
-
     </section>
+
     <section class="about" id="about">
 
         <div class="container">
 
             <div class="section-title">
 
-                <h2>About Me</h2>
+                <h2 data-i18n="nav_about">About Me</h2>
 
             </div>
 
@@ -137,14 +116,14 @@
 
                 <div class="about-text">
 
-                    <p>
+                    <p data-i18n="about_p1">
                         I'm Adham Awad, a passionate Data Analyst with experience in
                         Power BI, SQL, Excel and Python. I enjoy transforming raw
                         data into clear dashboards that help businesses make better
                         decisions.
                     </p>
 
-                    <p>
+                    <p data-i18n="about_p2">
                         My goal is to build professional business intelligence
                         solutions and continuously improve my analytical skills.
                     </p>
@@ -162,7 +141,7 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Skills</h2>
+                <h2 data-i18n="nav_skills">Skills</h2>
             </div>
 
             <div class="skills-content">
@@ -324,12 +303,13 @@
         </div>
 
     </section>
+
     <section class="projects" id="projects">
 
         <div class="container">
 
             <div class="section-title">
-                <h2>Projects</h2>
+                <h2 data-i18n="nav_projects">Projects</h2>
             </div>
 
             <div class="projects-grid">
@@ -343,7 +323,7 @@
                     </p>
                     <div class="project-actions">
                         <a href="https://github.com/Adham-DataScientist/Healthcare-Analytics-Dashboard" target="_blank"
-                            class="btn btn-outline">
+                            class="btn btn-outline" data-i18n="code_btn">
                             💻 View Project
                         </a>
                     </div>
@@ -358,7 +338,7 @@
                     </p>
                     <div class="project-actions">
                         <a href="https://github.com/Adham-DataScientist/Restaurant-Analytics-Dashboard" target="_blank"
-                            class="btn btn-outline">
+                            class="btn btn-outline" data-i18n="code_btn">
                             💻 View Project
                         </a>
                     </div>
@@ -373,11 +353,11 @@
                     </p>
                     <div class="project-actions">
                         <a href="https://ai-sales-forecasting-system-e4dhjdx3at7xw55ksvb7hs.streamlit.app/"
-                            target="_blank" class="btn btn-primary">
+                            target="_blank" class="btn btn-primary" data-i18n="demo_btn">
                             🚀 Live Demo
                         </a>
                         <a href="https://github.com/Adham-DataScientist/AI-Sales-Forecasting-System" target="_blank"
-                            class="btn btn-outline">
+                            class="btn btn-outline" data-i18n="code_btn">
                             💻 GitHub
                         </a>
                     </div>
@@ -392,11 +372,11 @@
                     </p>
                     <div class="project-actions">
                         <a href="https://auto-insight-etl-system-jtfyremso7eermdxgrbecn.streamlit.app/" target="_blank"
-                            class="btn btn-primary">
+                            class="btn btn-primary" data-i18n="demo_btn">
                             🚀 Live Demo
                         </a>
                         <a href="https://github.com/Adham-DataScientist/Auto-Insight-ETL-System" target="_blank"
-                            class="btn btn-outline">
+                            class="btn btn-outline" data-i18n="code_btn">
                             💻 GitHub
                         </a>
                     </div>
@@ -410,11 +390,11 @@
                     </p>
                     <div class="project-actions">
                         <a href="https://real-estate-ai-predictor-bjtbpijvtq8mjh894cdqm5.streamlit.app/" target="_blank"
-                            class="btn btn-primary">
+                            class="btn btn-primary" data-i18n="demo_btn">
                             🚀 Live Demo
                         </a>
                         <a href="https://github.com/Adham-DataScientist/Real-Estate-AI-Predictor" target="_blank"
-                            class="btn btn-outline">
+                            class="btn btn-outline" data-i18n="code_btn">
                             💻 GitHub
                         </a>
                     </div>
@@ -428,11 +408,11 @@
                     </p>
                     <div class="project-actions">
                         <a href="https://smart-savings-planner-camzhlcm6sd2fwa6cajvwt.streamlit.app/" target="_blank"
-                            class="btn btn-primary">
+                            class="btn btn-primary" data-i18n="demo_btn">
                             🚀 Live Demo
                         </a>
                         <a href="https://github.com/Adham-DataScientist/Smart-Savings-Planner" target="_blank"
-                            class="btn btn-outline">
+                            class="btn btn-outline" data-i18n="code_btn">
                             💻 GitHub
                         </a>
                     </div>
@@ -446,11 +426,11 @@
                     </p>
                     <div class="project-actions">
                         <a href="https://adham-datascientist-ai-resume-analyzer-jh85pzlnsknge6ei5w9eaf.streamlit.app/"
-                            target="_blank" class="btn btn-primary">
+                            target="_blank" class="btn btn-primary" data-i18n="demo_btn">
                             🚀 Live Demo
                         </a>
                         <a href="https://github.com/Adham-DataScientist/AI-Resume-Analyzer" target="_blank"
-                            class="btn btn-outline">
+                            class="btn btn-outline" data-i18n="code_btn">
                             💻 GitHub
                         </a>
                     </div>
@@ -464,11 +444,11 @@
                     </p>
                     <div class="project-actions">
                         <a href="https://fitness-ai-coach-oshxeidtmhbv6psprxnune.streamlit.app/" target="_blank"
-                            class="btn btn-primary">
+                            class="btn btn-primary" data-i18n="demo_btn">
                             🚀 Live Demo
                         </a>
                         <a href="https://github.com/Adham-DataScientist/Fitness-AI-Coach" target="_blank"
-                            class="btn btn-outline">
+                            class="btn btn-outline" data-i18n="code_btn">
                             💻 GitHub
                         </a>
                     </div>
@@ -478,12 +458,13 @@
         </div>
 
     </section>
+
     <section class="certificates" id="certificates">
 
         <div class="container">
 
             <div class="section-title">
-                <h2>Certificates & Education</h2>
+                <h2 data-i18n="nav_certificates">Certificates & Education</h2>
             </div>
 
             <div class="certificate-gallery">
@@ -491,21 +472,20 @@
                 <div class="certificate-item">
                     <img src="images/kamp.jpeg" alt="Data Analysis Camp">
                     <h3>Data Analysis Camp</h3>
-                    <a href="images/kamp.jpeg" target="_blank" class="btn btn-primary">👁️ View Certificate</a>
+                    <a href="images/kamp.jpeg" target="_blank" class="btn btn-primary" data-i18n="view_cert">👁️ View Certificate</a>
                 </div>
 
                 <div class="certificate-item">
                     <img src="images/certificate digital transformation program2.jpeg" alt="Digital Transformation">
                     <h3>Digital Transformation</h3>
                     <a href="images/certificate digital transformation program2.jpeg" target="_blank"
-                        class="btn btn-primary">👁️ View Certificate</a>
+                        class="btn btn-primary" data-i18n="view_cert">👁️ View Certificate</a>
                 </div>
 
                 <div class="certificate-item">
                     <img src="images/certificate_Gredute2.jpeg" alt="Bachelor Degree in Management Information Systems">
                     <h3>Bachelor Degree in MIS</h3>
-                    <a href="images/certificate_Gredute2.jpeg" target="_blank" class="btn btn-primary">👁️ View
-                        Certificate</a>
+                    <a href="images/certificate_Gredute2.jpeg" target="_blank" class="btn btn-primary" data-i18n="view_cert">👁️ View Certificate</a>
                 </div>
 
             </div>
@@ -513,13 +493,14 @@
         </div>
 
     </section>
+
     <section class="contact" id="contact">
 
         <div class="container">
 
             <div class="section-title">
 
-                <h2>Contact Me</h2>
+                <h2 data-i18n="nav_contact">Contact Me</h2>
 
             </div>
 
@@ -529,7 +510,7 @@
 
                     <i class="fas fa-envelope"></i>
 
-                    <h3>Email</h3>
+                    <h3 data-i18n="contact_email">Email</h3>
 
                     <p>adhammahmoud33333@gmail.com</p>
 
@@ -541,7 +522,7 @@
 
                     <h3>LinkedIn</h3>
 
-                    <a href="https://www.linkedin.com/in/adham-mahmoud-a680032a9/" target="_blank">
+                    <a href="https://www.linkedin.com/in/adham-mahmoud-a680032a9/" target="_blank" data-i18n="visit_profile">
                         Visit Profile
                     </a>
 
@@ -553,7 +534,7 @@
 
                     <h3>GitHub</h3>
 
-                    <a href="https://github.com/Adham-DataScientist" target="_blank">
+                    <a href="https://github.com/Adham-DataScientist" target="_blank" data-i18n="view_projects">
                         View Projects
                     </a>
 
@@ -569,7 +550,7 @@
 
         <div class="container">
 
-            <p>
+            <p data-i18n="footer_text">
                 © 2026 Adham Awad | Data Analyst Portfolio
             </p>
 
@@ -577,11 +558,10 @@
 
     </footer>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
     <button id="topBtn">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
-
 
 </body>
 
