@@ -20,14 +20,15 @@ body{
     margin:auto;
 }
 
-/* تنسيق الحاوية الخارجية للصورة */
+
 .hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+}
 .image-box {
-  width: 200px;           /* عرض الصورة */
+  width: 200px;          
   height: 200px;       
   border-radius: 50%;    
   overflow: hidden;      
