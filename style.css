@@ -809,6 +809,16 @@ html[dir="rtl"] .project-actions {
 }
 
 header nav ul li a.active {
-    color: #0066ff; /* أو اللون المعتمد لديك */
+    color: #0066ff;
     border-bottom: 2px solid #0066ff;
+}
+
+section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    padding: 60px 0;
+}
+
+section:hover {
+    box-shadow: 0 8px 30px rgba(0, 102, 255, 0.08); /* إضاءة خفيفة باللون الأزرق */
+    transform: translateY(-3px); /* رفعة خفيفة للسكشن */
 }

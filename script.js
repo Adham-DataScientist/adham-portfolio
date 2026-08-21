@@ -175,7 +175,7 @@ window.addEventListener('scroll', () => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
         
-        // التحقق من تواجد التمرير داخل نطاق القسم الحالي
+        
         if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
             current = section.getAttribute('id');
         }
@@ -186,5 +186,22 @@ window.addEventListener('scroll', () => {
         if (link.getAttribute('href').includes(current)) {
             link.classList.add('active');
         }
+    });
+});
+
+const allSections = document.querySelectorAll('section');
+const allNavLinks = document.querySelectorAll('header nav ul li a');
+
+allSections.forEach(section => {
+
+    section.addEventListener('mouseenter', () => {
+        const id = section.getAttribute('id');
+        
+        allNavLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+            }
+        });
     });
 });
