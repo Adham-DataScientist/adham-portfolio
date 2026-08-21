@@ -20,6 +20,36 @@ body{
     margin:auto;
 }
 
+/* تنسيق الحاوية الخارجية للصورة */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+.image-box {
+  width: 200px;           /* عرض الصورة */
+  height: 200px;       
+  border-radius: 50%;    
+  overflow: hidden;      
+  border: 3px solid #2563eb; 
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.4); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  object-position: center; 
+  display: block;
+}
+
+.image-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.7);
+}
+
 header{
     width:100%;
     background:#fff;
