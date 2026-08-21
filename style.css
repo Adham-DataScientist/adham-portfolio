@@ -807,3 +807,8 @@ html[dir="rtl"] .project-actions {
     transform: scale(1.1);
     color: #fff;
 }
+
+header nav ul li a.active {
+    color: #0066ff; /* أو اللون المعتمد لديك */
+    border-bottom: 2px solid #0066ff;
+}
