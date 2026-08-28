@@ -204,4 +204,33 @@ allSections.forEach(section => {
             }
         });
     });
+
+const navMenu = document.querySelector('nav ul');
+const hamburger = document.createElement('button');
+hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+hamburger.classList.add('hamburger');
+hamburger.setAttribute('aria-label', 'Toggle Menu');
+
+const nav = document.querySelector('nav');
+nav.insertBefore(hamburger, navMenu);
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+   
+    const icon = hamburger.querySelector('i');
+    if (navMenu.classList.contains('show')) {
+        icon.className = 'fas fa-times';
+    } else {
+        icon.className = 'fas fa-bars';
+    }
+});
+
+
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+        const icon = hamburger.querySelector('i');
+        icon.className = 'fas fa-bars';
+    });
+});    
 });
