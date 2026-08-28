@@ -112,109 +112,111 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setLanguage(currentLang);
 
-const langBtn = document.getElementById('lang-btn');
-if (langBtn) {
-    langBtn.addEventListener('click', () => {
-        setLanguage(currentLang === 'en' ? 'ar' : 'en');
-    });
-}
-
-// Scroll Top Button
-const topBtn = document.getElementById("topBtn");
-if (topBtn) {
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 300) {
-            topBtn.classList.add("show");
-        } else {
-            topBtn.classList.remove("show");
-        }
-    });
-
-    topBtn.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+    const langBtn = document.getElementById('lang-btn');
+    if (langBtn) {
+        langBtn.addEventListener('click', () => {
+            setLanguage(currentLang === 'en' ? 'ar' : 'en');
         });
-    });
-}
-
-// Header Shadow on Scroll
-window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    if (header) {
-        if (window.scrollY > 50) {
-            header.style.boxShadow = "0 8px 25px rgba(0,0,0,.15)";
-        } else {
-            header.style.boxShadow = "0 5px 20px rgba(0,0,0,.08)";
-        }
     }
-});
 
-// Intersection Observer for Animation
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        }
-    });
-}, {
-    threshold: 0.15
-});
-
-document.querySelectorAll("section").forEach(section => {
-    observer.observe(section);
-});
-
-// Active Link on Scroll
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('header nav ul li a');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('active');
-        }
-    });
-});
-
-// Mobile Hamburger Menu Setup
-const navMenu = document.querySelector('nav ul');
-const nav = document.querySelector('nav');
-
-if (nav && navMenu) {
-    const hamburger = document.createElement('button');
-    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-    hamburger.classList.add('hamburger');
-    hamburger.setAttribute('aria-label', 'Toggle Menu');
-    nav.insertBefore(hamburger, navMenu);
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('show');
-        const icon = hamburger.querySelector('i');
-        if (icon) {
-            if (navMenu.classList.contains('show')) {
-                icon.className = 'fas fa-times';
+    // Scroll Top Button
+    const topBtn = document.getElementById("topBtn");
+    if (topBtn) {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                topBtn.classList.add("show");
             } else {
-                icon.className = 'fas fa-bars';
+                topBtn.classList.remove("show");
+            }
+        });
+
+        topBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
+
+    // Header Shadow on Scroll
+    window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (header) {
+            if (window.scrollY > 50) {
+                header.style.boxShadow = "0 8px 25px rgba(0,0,0,.15)";
+            } else {
+                header.style.boxShadow = "0 5px 20px rgba(0,0,0,.08)";
             }
         }
     });
 
-    document.querySelectorAll('nav ul li a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('show');
-            const icon = hamburger.querySelector('i');
-            if (icon) icon.className = 'fas fa-bars';
+    // Intersection Observer for Animation
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    document.querySelectorAll("section").forEach(section => {
+        observer.observe(section);
+    });
+
+    // Active Link on Scroll
+    const sections = document.querySelectorAll('section');
+    const headerNavLinks = document.querySelectorAll('header nav ul li a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        headerNavLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
         });
     });
-}
+
+    // Mobile Hamburger Menu Setup
+    const navMenu = document.querySelector('nav ul');
+    const nav = document.querySelector('nav');
+
+    if (nav && navMenu) {
+        const hamburger = document.createElement('button');
+        hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+        hamburger.classList.add('hamburger');
+        hamburger.setAttribute('aria-label', 'Toggle Menu');
+        nav.insertBefore(hamburger, navMenu);
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+            const icon = hamburger.querySelector('i');
+            if (icon) {
+                if (navMenu.classList.contains('show')) {
+                    icon.className = 'fas fa-times';
+                } else {
+                    icon.className = 'fas fa-bars';
+                }
+            }
+        });
+
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+                const icon = hamburger.querySelector('i');
+                if (icon) icon.className = 'fas fa-bars';
+            });
+        });
+    }
+
+}); 
