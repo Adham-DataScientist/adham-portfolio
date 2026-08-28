@@ -864,7 +864,7 @@ section:hover {
     transform: scale(1.2) rotate(5deg);
     transition: 0.3s;
   }
-  /* ===== زر Power BI المميز ===== */
+
   .btn-powerbi {
     background-color: #f2c811 !important;
     color: #000000 !important;
