@@ -860,3 +860,24 @@ body.dark .btn-powerbi {
 body.dark .btn-powerbi:hover {
   background-color: #d4a800 !important;
 }
+/* إخفاء زر الموبايل على الشاشات الكبيرة */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #1e293b;
+  cursor: pointer;
+  outline: none;
+}
+
+body.dark .hamburger {
+  color: #fff;
+}
+
+/* إظهار زر الموبايل فقط على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}

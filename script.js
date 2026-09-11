@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Dark / Light Theme Toggle
     const toggle = document.getElementById("theme-toggle");
     if (toggle) {
         const icon = toggle.querySelector("i");
@@ -119,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Scroll Top Button
+  
     const topBtn = document.getElementById("topBtn");
     if (topBtn) {
         window.addEventListener("scroll", () => {
@@ -138,7 +137,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Header Shadow on Scroll
     window.addEventListener("scroll", () => {
         const header = document.querySelector("header");
         if (header) {
@@ -150,7 +148,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Intersection Observer for Animation
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -187,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Mobile Hamburger Menu Setup
+   
     const navMenu = document.querySelector('nav ul');
     const nav = document.querySelector('nav');
 
