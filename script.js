@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Language Selector & Translation
+  // Language Selector & Translation
     const translations = {
         en: {
             nav_home: "Home",
@@ -55,11 +55,20 @@ document.addEventListener("DOMContentLoaded", () => {
             hero_desc: "Passionate about transforming raw data into meaningful business insights using Power BI, SQL, Excel and Python.",
             view_projects: "View Projects",
             contact_me: "Contact Me",
+            about_title: "About Me",
             about_p1: "I'm Adham Awad, a passionate Data Analyst with experience in Power BI, SQL, Excel and Python. I enjoy transforming raw data into clear dashboards that help businesses make better decisions.",
             about_p2: "My goal is to build professional business intelligence solutions and continuously improve my analytical skills.",
             demo_btn: "🚀 Live Demo",
             code_btn: "💻 GitHub",
             view_cert: "👁️ View Certificate",
+            view_letter: "👁️ View Letter",
+            view_transcript: "👁️ View PDF",
+            verify_cred: "✔️ Verify Credentials",
+            verify_cert: "🔍 Verify Certificate",
+            verify_microsoft: "✔️ Verify on Microsoft",
+            download_excel: "📊 Download Excel File",
+            view_badges: "🏅 View All Microsoft Badges",
+            microsoft_badges_title: "Microsoft Earned Badges",
             contact_email: "Email",
             visit_profile: "Visit Profile",
             footer_text: "© 2026 Adham Awad | Data Analyst Portfolio"
@@ -77,11 +86,20 @@ document.addEventListener("DOMContentLoaded", () => {
             hero_desc: "شغوف بتحويل البيانات الخام إلى رؤى تحليلية واستراتيجية قيمة باستخدام Power BI و SQL و Excel و Python.",
             view_projects: "عرض المشاريع",
             contact_me: "تواصل معي",
-            about_p1: "أنا أدهم عوض، محلل بيانات متخحصص يمتلك خبرة في Power BI و SQL و Excel و Python. أستمتع بتحويل البيانات المعقدة إلى لوحات تحكم تفاعلية مساعدة في اتخاذ القرارات.",
-            about_p2: "هدفي هو بناء حلول ذكاء أعمال احترافية وتطوير مهاراتي التحليلي باستمرار.",
+            about_title: "نبذة عني",
+            about_p1: "أنا أدهم عوض، محلل بيانات شغوف أمتلك خبرة واسعة في Power BI و SQL و Excel و Python. أستمتع بتحويل البيانات المعقدة إلى لوحات تحكم تفاعلية واضحة تساعد الشركات في اتخاذ قرارات أفضل.",
+            about_p2: "هدفي هو بناء حلول ذكاء أعمال احترافية وتطوير مهاراتي التحليلية باستمرار.",
             demo_btn: "🚀 التجربة الحية",
             code_btn: "💻 الكود المصدري",
             view_cert: "👁️ عرض الشهادة",
+            view_letter: "👁️ عرض الخطاب",
+            view_transcript: "👁️ عرض ملف PDF",
+            verify_cred: "✔️ التحقق من الاعتماد",
+            verify_cert: "🔍 التحقق من الشهادة",
+            verify_microsoft: "✔️ التحقق عبر مايكروسوفت",
+            download_excel: "📊 تحميل ملف الإكسل",
+            view_badges: "🏅 عرض جميع شارات مايكروسوفت",
+            microsoft_badges_title: "شارات مايكروسوفت المكتسبة",
             contact_email: "البريد الإلكتروني",
             visit_profile: "زيارة الملف الشخصي",
             footer_text: "© 2026 أدهم عوض | ملف الأعمال الشخصي"
