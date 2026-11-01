@@ -235,12 +235,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 }); 
+
 document.addEventListener('DOMContentLoaded', () => {
     const settingsBtn = document.getElementById('settingsBtn');
     const preferencesMenu = document.getElementById('preferencesMenu');
     const dropdownThemeToggle = document.getElementById('dropdown-theme-toggle');
     const dropdownLangBtn = document.getElementById('dropdown-lang-btn');
 
+    // 1. فتح وإغلاق القائمة المنسدلة
     if (settingsBtn && preferencesMenu) {
         settingsBtn.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -254,19 +256,42 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // 2. زر تغيير الثيم (Dark / Light) مباشرة
     if (dropdownThemeToggle) {
+        // ضبط النص الافتراضي حسب الثيم الحالي
+        dropdownThemeToggle.textContent = document.body.classList.contains('dark') ? '☀️ Light' : '🌙 Dark';
+
         dropdownThemeToggle.addEventListener('click', () => {
-            const mainThemeToggle = document.getElementById('theme-toggle');
-            if (mainThemeToggle) mainThemeToggle.click();
-            dropdownThemeToggle.textContent = document.body.classList.contains('dark') ? '☀️ Light' : '🌙 Dark';
+            document.body.classList.toggle('dark');
+            
+            // حفظ الحالة في الذاكرة المحلية
+            if (document.body.classList.contains('dark')) {
+                localStorage.setItem("theme", "dark");
+                dropdownThemeToggle.textContent = '☀️ Light';
+            } else {
+                localStorage.setItem("theme", "light");
+                dropdownThemeToggle.textContent = '🌙 Dark';
+            }
         });
     }
 
+    // 3. زر تغيير اللغة (AR / EN) مباشرة
     if (dropdownLangBtn) {
         dropdownLangBtn.addEventListener('click', () => {
-            const mainLangBtn = document.getElementById('lang-btn');
-            if (mainLangBtn) mainLangBtn.click();
-            dropdownLangBtn.textContent = document.documentElement.lang === 'ar' ? 'EN' : 'AR';
+            // تحديد اللغة الحالية وعكسها
+            let currentLang = localStorage.getItem('lang') || 'en';
+            let newLang = currentLang === 'en' ? 'ar' : 'en';
+            
+            // تنفيذ دالة تغيير اللغة الموجودة مسبقاً في ملفك
+            if (typeof setLanguage === 'function') {
+                setLanguage(newLang);
+            } else {
+                // تفعيل التغيير يدوياً إذا لم تكن الدالة متاحة
+                localStorage.setItem('lang', newLang);
+                location.reload(); // إعادة تحميل الصفحة لتطبيق اللغة الجديدة
+            }
+            
+            dropdownLangBtn.textContent = newLang === 'ar' ? 'EN' : 'AR';
         });
     }
 });
