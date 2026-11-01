@@ -1150,3 +1150,64 @@ body.dark .dropdown-link {
   color: #ffffff;
   border-color: #2563eb;
 }
+/* خلفية جمالية مخصصة لمجال تحليل البيانات والـ BI */
+.hero {
+  position: relative;
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(37, 99, 235, 0.08) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(14, 165, 233, 0.08) 0%,
+      transparent 40%
+    ),
+    #f8fafc;
+  overflow: hidden;
+}
+
+/* إضافة نمط شبكي (Data Grid Lines) خفيف في الخلفية */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(to right, rgba(37, 99, 235, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 99, 235, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* التأكد من أن محتوى الـ Hero يظهر فوق الشبكة وخلفيتها */
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* دعم الوضع الليلي (Dark Mode) ليظل متناسقاً ومهيباً */
+body.dark .hero {
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(37, 99, 235, 0.15) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(14, 165, 233, 0.1) 0%,
+      transparent 40%
+    ),
+    #0f172a;
+}
+
+body.dark .hero::before {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
