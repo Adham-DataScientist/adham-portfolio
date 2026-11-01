@@ -235,3 +235,38 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 }); 
+document.addEventListener('DOMContentLoaded', () => {
+    const settingsBtn = document.getElementById('settingsBtn');
+    const preferencesMenu = document.getElementById('preferencesMenu');
+    const dropdownThemeToggle = document.getElementById('dropdown-theme-toggle');
+    const dropdownLangBtn = document.getElementById('dropdown-lang-btn');
+
+    if (settingsBtn && preferencesMenu) {
+        settingsBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            preferencesMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!preferencesMenu.contains(e.target) && !settingsBtn.contains(e.target)) {
+                preferencesMenu.classList.remove('active');
+            }
+        });
+    }
+
+    if (dropdownThemeToggle) {
+        dropdownThemeToggle.addEventListener('click', () => {
+            const mainThemeToggle = document.getElementById('theme-toggle');
+            if (mainThemeToggle) mainThemeToggle.click();
+            dropdownThemeToggle.textContent = document.body.classList.contains('dark') ? '☀️ Light' : '🌙 Dark';
+        });
+    }
+
+    if (dropdownLangBtn) {
+        dropdownLangBtn.addEventListener('click', () => {
+            const mainLangBtn = document.getElementById('lang-btn');
+            if (mainLangBtn) mainLangBtn.click();
+            dropdownLangBtn.textContent = document.documentElement.lang === 'ar' ? 'EN' : 'AR';
+        });
+    }
+});
