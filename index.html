@@ -28,7 +28,33 @@
 
     <header>
         <nav class="container">
-            <div class="logo">Adham Awad</div>
+            <!-- الشعار مع زر القائمة المنسدلة -->
+            <div class="logo-wrapper">
+                <div class="logo">Adham Awad</div>
+                <button class="settings-toggle-btn" id="settingsBtn" aria-label="Quick Settings">
+                    <i class="fas fa-bars"></i> Quick Menu
+                </button>
+
+                <!-- قائمة التفضيلات المنسدلة -->
+                <div class="preferences-dropdown" id="preferencesMenu">
+                    <div class="dropdown-header">
+                        <span>Quick Preferences</span>
+                    </div>
+                    <div class="dropdown-item">
+                        <span><i class="fas fa-adjust"></i> Theme</span>
+                        <button id="dropdown-theme-toggle" class="switch-btn">🌙 Dark</button>
+                    </div>
+                    <div class="dropdown-item">
+                        <span><i class="fas fa-globe"></i> Language</span>
+                        <button id="dropdown-lang-btn" class="switch-btn">AR</button>
+                    </div>
+                    <div class="dropdown-item">
+                        <span><i class="fas fa-file-download"></i> Resume</span>
+                        <a href="files/cv.pdf" class="dropdown-link" download>Download</a>
+                    </div>
+                </div>
+            </div>
+
             <ul>
                 <li><a href="#hero" data-i18n="nav_home">Home</a></li>
                 <li><a href="#about" data-i18n="nav_about">About</a></li>
@@ -37,10 +63,8 @@
                 <li><a href="#certificates" data-i18n="nav_certificates">Certificates</a></li>
                 <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
+
             <div style="display: flex; align-items: center; gap: 10px;">
-                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme"><i
-                        class="fas fa-moon"></i></button>
-                <button id="lang-btn" class="theme-btn">AR</button>
                 <a href="files/cv.pdf" download class="btn" data-i18n="nav_cv">Download CV</a>
             </div>
         </nav>
