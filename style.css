@@ -1257,3 +1257,31 @@ body.dark .filter-btn.active {
 .project-card {
   transition: all 0.4s ease-in-out;
 }
+
+/* تعديلات متجاوبة لشاشات الموبايل */
+@media (max-width: 768px) {
+  /* تصغير مسافات وأزرار الفلترة لترتص بشكل أنيق على الموبايل */
+  .project-filters {
+    gap: 8px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  /* ضبط حجم البطاقات والمسافات الجانبية */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  /* ضبط القائمة المنسدلة للتفضيلات على الموبايل لتكون واضحة */
+  .preferences-dropdown {
+    width: 190px;
+    left: -20px;
+  }
+}
