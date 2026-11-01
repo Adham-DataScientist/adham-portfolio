@@ -234,34 +234,44 @@
             <div class="section-title">
                 <h2 data-i18n="nav_projects">Projects</h2>
             </div>
+
+            <!-- أزرار الفلترة التفاعلية -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="powerbi">Power BI & BI</button>
+                <button class="filter-btn" data-filter="python">Python & AI</button>
+                <button class="filter-btn" data-filter="excel">Excel</button>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card">
+
+                <div class="project-card" data-category="powerbi">
                     <img src="images/healthcare.png" alt="Healthcare Analytics Dashboard">
                     <h3>Healthcare Analytics Dashboard</h3>
                     <p>Interactive Power BI dashboard for analyzing healthcare data using KPIs, charts and insights.</p>
                     <div class="project-actions">
                         <a href="https://github.com/Adham-DataScientist/Healthcare-Analytics-Dashboard" target="_blank"
                             rel="noopener noreferrer" class="btn btn-outline" data-i18n="code_btn">💻 View Project</a>
-
                         <a href="https://app.powerbi.com/view?r=eyJrIjoiYzgxODk5NDgtMTVlNi00MDQ3LWI1ODEtZDgyZWIzM2JkZTdlIiwidCI6IjJiYjZlNWJjLWMxMDktNDdmYi05NDMzLWMxYzZmNGZhMzNmZiIsImMiOjl9"
                             target="_blank" rel="noopener noreferrer" class="btn btn-powerbi">📊 عرض لوحة Power BI</a>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- 2. Restaurant (Power BI) -->
+                <div class="project-card" data-category="powerbi">
                     <img src="images/restaurant.png" alt="Restaurant Analytics Dashboard">
                     <h3>Restaurant Analytics Dashboard</h3>
                     <p>Business Intelligence dashboard to analyze restaurant sales, customers and performance.</p>
                     <div class="project-actions">
                         <a href="https://github.com/Adham-DataScientist/Restaurant-Analytics-Dashboard" target="_blank"
                             rel="noopener noreferrer" class="btn btn-outline" data-i18n="code_btn">💻 View Project</a>
-
                         <a href="https://app.powerbi.com/view?r=eyJrIjoiYWMwOGViNzEtOTlmZC00OTMyLWEyZjMtYzU2ZDZjMmIxYTcyIiwidCI6IjJiYjZlNWJjLWMxMDktNDdmYi05NDMzLWMxYzZmNGZhMzNmZiIsImMiOjl9"
                             target="_blank" rel="noopener noreferrer" class="btn btn-powerbi">📊 عرض لوحة Power BI</a>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- 3. AI Sales (Python) -->
+                <div class="project-card" data-category="python">
                     <img src="images/Sales.jpg" alt="AI Sales Forecasting System">
                     <h3>AI Sales Forecasting System</h3>
                     <p>Data analysis project using Python and Machine Learning for sales prediction with interactive
@@ -275,7 +285,8 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- 4. Auto Insight ETL (Python) -->
+                <div class="project-card" data-category="python">
                     <img src="images/ETL.jpg" alt="Auto Insight ETL System">
                     <h3>Auto Insight ETL System</h3>
                     <p>Automated data extraction, cleaning, and ETL pipeline dashboard generating insights
@@ -288,7 +299,8 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- 5. Real Estate (Python) -->
+                <div class="project-card" data-category="python">
                     <img src="images/real_estate.jpg" alt="Real Estate AI Predictor">
                     <h3>Real Estate AI Predictor</h3>
                     <p>Machine Learning system designed to predict real estate valuation and property prices accurately.
@@ -301,7 +313,8 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- 6. Smart Savings (Python) -->
+                <div class="project-card" data-category="python">
                     <img src="images/smart_saving.jpg" alt="Smart Savings Planner">
                     <h3>Smart Savings Planner</h3>
                     <p>Interactive financial planning tool designed to help users structure savings goals, track
@@ -314,7 +327,8 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- 7. AI Resume (Python) -->
+                <div class="project-card" data-category="python">
                     <img src="images/AI_Resume.png" alt="AI Resume Analyzer">
                     <h3>AI Resume Analyzer</h3>
                     <p>AI-powered application designed to analyze resumes, evaluate job description compatibility, and
@@ -328,7 +342,8 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <!-- 8. Fitness AI (Python) -->
+                <div class="project-card" data-category="python">
                     <img src="images/Fitness_AI_Coach.jpg" alt="Fitness AI Coach">
                     <h3>Fitness AI Coach</h3>
                     <p>AI-driven personalized fitness assistant designed to track health metrics, generate workout
@@ -340,17 +355,20 @@
                             rel="noopener noreferrer" class="btn btn-outline" data-i18n="code_btn">💻 GitHub</a>
                     </div>
                 </div>
-                <div class="project-card">
+
+                <!-- 9. Excel Dashboard -->
+                <div class="project-card" data-category="excel">
                     <img src="images/excel_dashboard.png" alt="Excel Sales & Profit Analytics Dashboard">
                     <h3>Excel Sales & Profit Analytics</h3>
                     <p>Advanced Excel analysis project evaluating 2023 sales performance, revenue, costs, and profit
                         margins with interactive dashboard insights.</p>
                     <div class="project-actions">
-
                         <a href="files/Data Analyst.xlsx" download class="btn btn-primary">📊 Download Excel File</a>
                     </div>
                 </div>
-                <div class="project-card">
+
+                <!-- 10. Athar Academy (Power BI) -->
+                <div class="project-card" data-category="powerbi">
                     <img src="images/Athar_Academy.png" alt="Athar Academy Analytics">
                     <h3>Athar Academy Analytics</h3>
                     <p>Comprehensive BI & Data Analysis dashboard analyzing 12k+ students and 7.42M SAR revenue with
